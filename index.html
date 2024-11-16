@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRevo Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title and Description -->
+  <h1 id="title">KRevo Survey Form</h1>
+  <p id="description">Please fill out this survey to help us improve our services so far with KRevo Inc.</p>
+
+  <!-- Survey Form -->
+  <form id="survey-form">
+
+    <!-- Name Field -->
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <!-- Email Field -->
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Number Field -->
+    <label id="number-label" for="number">Age (18-100)</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+    <!-- Dropdown Field -->
+    <label for="dropdown">Favorite Service</label>
+    <select id="dropdown" name="service">
+      <option value="customer-support">Customer Support</option>
+      <option value="product-quality">Product Quality</option>
+      <option value="user-experience">User Experience</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>How did you find us?</p>
+    <label>
+      <input type="radio" name="source" value="online" required> Online
+    </label>
+    <label>
+      <input type="radio" name="source" value="friend"> Friend
+    </label>
+
+    <!-- Checkbox Options -->
+    <p>What aspects do you find important? (Select all that apply)</p>
+    <label>
+      <input type="checkbox" name="importance" value="quality"> Quality
+    </label>
+    <label>
+      <input type="checkbox" name="importance" value="price"> Price
+    </label>
+    <label>
+      <input type="checkbox" name="importance" value="speed"> Speed
+    </label>
+
+    <!-- Comments Textarea -->
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" name="comments" placeholder="Enter any additional comments"></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
